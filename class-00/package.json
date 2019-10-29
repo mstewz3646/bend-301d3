@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --verbose",
-    "watch": "jest --watchall"
+    "watch": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "jest": "^24.1.0"
+    "jest": "^24.9.0"
   }
 }
