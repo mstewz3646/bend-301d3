@@ -145,6 +145,7 @@ let Student = function(name, age, hometown) {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
+  this.todo = ['go to school', 'go home'];
 };
 
 let joe = new Student('Joe', 'Schmoe', 100);
@@ -157,13 +158,27 @@ console.log(joe);
 
 
 
-Student.prototype.greeting = function() {
-  return `Hi, my name is ${this.name}`;
+Student.prototype.greeting = ()=> {
+  return `Hi, my name is ${this.innerWidth}`;
 };
+
+Student.prototype.go = function(){
+
+  this.todo.forEach( (element) => {
+    console.log(this.name +  ' wants to ' + element);
+  });
+
+};
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
+<<<<<<< HEAD
 console.log(joe.greeting());
+=======
+// console.log(joe.greeting());
+joe.go();
+>>>>>>> upstream/master
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
